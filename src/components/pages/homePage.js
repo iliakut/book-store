@@ -1,8 +1,9 @@
 import React from "react";
+import BookList from "../bookList/bookList";
 
 const HomePage = () => {
   return (
-    <div>Home page</div>
+    <BookList/>
   );
 };
 
