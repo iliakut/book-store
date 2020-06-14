@@ -56,10 +56,11 @@ class BookList extends Component {
   }
 }
 
-const mapStateToProps = ({books, loading}) => {
+const mapStateToProps = ({books, loading, error}) => {
   return {
     books,
-    loading
+    loading,
+    error,
   }
 };
 
