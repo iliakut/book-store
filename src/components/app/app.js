@@ -1,11 +1,13 @@
 import React from "react";
-import {Route, Switch} from "react-router-dom";
+import {Link, Route, Switch} from "react-router-dom";
 import HomePage from "../pages/homePage";
 import CartPage from "../pages/cartPage";
 
 const App = () => {
   return (
     <div>
+      <Link to="/">Home</Link>
+      <Link to="/cart/">Cart</Link>
       <Switch>
         <Route
           path="/"
