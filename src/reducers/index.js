@@ -69,6 +69,12 @@ const reducer = (state = initialState, action) => {
           ...state.cartItems.slice(indexItem + 1)
         ]
       };
+    case 'BOOK_REMOVE_FROM_CART':
+      console.log('remove');
+      return state;
+    case 'ALL_BOOK_REMOVE_FROM_CART' :
+      console.log('remove all');
+      return state;
     default:
       return state;
   }

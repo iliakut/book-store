@@ -32,12 +32,10 @@ const mapStateToProps = ({cartItems, orderTotal}) => {
   }
 };
 
-const mapDispatchToProps = () => {
-  return {
+const mapDispatchToProps = {
     onIncrease: bookAddToCart,
     onDecrease: bookRemoveFromCart,
     onDelete: allBookRemoveFromCart
-  }
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ShoppingCartTable);
